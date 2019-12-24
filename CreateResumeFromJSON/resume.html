@@ -1,12 +1,25 @@
-<head></head>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        @page {
+            size: 8.5in 11in;
+            margin: 0.5in;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
 <body>
     <div>
-        <h1>Tim Woods</h1>
+        <h1>{{ fullName }}</h1>
         <div>
-            <span>Seattle, WA</span>
-            <span>tim.woods.tw@gmail.com</span>
-            <span>360.223.3853</span>
-            <span>www.timwoods.dev</span>
+            <span>{{ location }}</span>
+            <span>{{ email }}</span>
+            <span>{{ phone }}</span>
+            <span>{{ website }}</span>
         </div>
     </div>
     {% for section in sections %}
@@ -17,7 +30,7 @@
 
             <div>
                 <span>{{ subsection.title }}</span>
-                <span>{{ subsection.title2 }}</span> 
+                <span>{{ subsection.title2 }}</span>
             </div>
             <div>
                 <span>{{ subsection.subtitle }}</span>
@@ -25,7 +38,7 @@
             </div>
             <ul>
                 {% for bullet_point in subsection.bulletPoints %}
-                    <li>{{ bullet_point.text }}</li>
+                <li>{{ bullet_point.text }}</li>
                 {% endfor %}
             </ul>
         </div>

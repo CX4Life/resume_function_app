@@ -1,4 +1,8 @@
 {
+    "fullName": "Tim Woods",
+    "email": "tim.woods.tw@gmail.com",
+    "phone": "360-223-3853",
+    "website": "www.timwoods.dev",
     "sections": [
         {
             "title": "Education",
@@ -10,10 +14,10 @@
                     "subtitle2": "Graduated June, 2018",
                     "bulletPoints": [
                         {
-                            "text": "Ate Ass"
+                            "text": "Computer Science stuff"
                         },
                         {
-                            "text": "Ran for president"
+                            "text": "Deep learning stuff"
                         }
                     ]
                 }
