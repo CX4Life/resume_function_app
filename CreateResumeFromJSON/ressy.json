@@ -1,0 +1,23 @@
+{
+    "sections": [
+        {
+            "title": "Education",
+            "subsections": [
+                {
+                    "title": "Western Washington University",
+                    "title2": "Bellingham, WA",
+                    "subtitle": "B.S. - Computer Science",
+                    "subtitle2": "Graduated June, 2018",
+                    "bulletPoints": [
+                        {
+                            "text": "Ate Ass"
+                        },
+                        {
+                            "text": "Ran for president"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

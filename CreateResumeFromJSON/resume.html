@@ -1,0 +1,35 @@
+<head></head>
+<body>
+    <div>
+        <h1>Tim Woods</h1>
+        <div>
+            <span>Seattle, WA</span>
+            <span>tim.woods.tw@gmail.com</span>
+            <span>360.223.3853</span>
+            <span>www.timwoods.dev</span>
+        </div>
+    </div>
+    {% for section in sections %}
+    <div>
+        <h2>{{ section.title }}</h2>
+        {% for subsection in section.subsections %}
+        <div>
+
+            <div>
+                <span>{{ subsection.title }}</span>
+                <span>{{ subsection.title2 }}</span> 
+            </div>
+            <div>
+                <span>{{ subsection.subtitle }}</span>
+                <span>{{ subsection.subtitle2 }}</span>
+            </div>
+            <ul>
+                {% for bullet_point in subsection.bulletPoints %}
+                    <li>{{ bullet_point.text }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</body>
